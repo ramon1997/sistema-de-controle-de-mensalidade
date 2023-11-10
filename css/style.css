@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+.barra {
+    width: 100%;
+    height: 70px;
+    border-bottom: 2px solid #32cd32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meio {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extra{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#danger{
+    border: 1px solid red;
+    border-radius: 20px;
+    margin-left: 15px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add a {
+    margin-left: 70px;
+    border: 1px solid #32cd32;
+    border-radius: 20px;
+    margin-left: 15px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #32cd32;
+    border-radius: 20px;
+}
+
+input::placeholder{
+    color: green;
+}
+
+label {
+    margin-right: 20px;
+}
+
+#botao {
+    width: 90px;
+}
+
+#botao:hover{
+    background-color: #32cd32;
+}
+
+table {
+    width: 50%;
+    border: 2px solid #32cd32;
+    border-radius: 20px;
+}
+
+td {
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #32cd32;
+    border-left: 1px solid #32cd32;
+}
+
+th {
+    border-bottom: 1px solid #32cd32;
+    border-left: 1px solid #32cd32;
+    padding: 10px;
+}
+
+.aviso{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aviso h1{
+    color: red;
+}
+
+button{
+    height: 50px;
+    border: #32cd32 1px solid;
+    border-radius: 20px;
+}
+
+.editar{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+footer p{
+    background-color: #000;
+}

@@ -27,19 +27,16 @@
 </html>
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Verifica se a senha foi enviada pelo formulário
-    if (isset($_POST['senha'])) {
-        $senha = $_POST['senha'];
+    session_start();
 
-        // Verifica se a senha é correta
-        if ($senha === "123") {
-            header("Location: painel.php");
-            exit(); // É uma boa prática usar exit() após redirecionar
-        } else {
-            echo "<script>alert('Senha incorreta')</script>";
-        }
+    $senha = $_POST['senha'];
+
+    if ($senha === "123") {
+        $_SESSION['autenticado'] = true;
+        header("Location: painel.php");
+        exit();
     } else {
-        echo "Senha não fornecida";
+        echo "<script>alert('Senha errada')</script>";
     }
 }
 ?>

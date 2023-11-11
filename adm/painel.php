@@ -1,4 +1,13 @@
 <?php
+session_start();
+
+// Verifica se o usuário está autenticado
+if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] !== true) {
+    // Redireciona para a página de login se não estiver autenticado
+    header("Location: index.php");
+    exit();
+}
+
 include_once "../app/conexao/Conexao.php";
 include_once "../app/dao/UsuarioDAO.php";
 include_once "../app/model/Usuario.php";
